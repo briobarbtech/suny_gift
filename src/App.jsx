@@ -5,7 +5,7 @@ import Book from './components/Book';
 function App() {
   return <AppStyled>
   <div className='body'>
-  <Title title="Hola Suny"/>
+  <Title title="¡FELIZ NAVIDAD!"/>
   <Book/>
   </div>
   </AppStyled>
@@ -13,7 +13,7 @@ function App() {
 const AppStyled = styled.div`
 .body {
 height: 100vh;
-background-color: #000;
+background-color: #391d62;
 }
 `
 export default App;

@@ -71,7 +71,7 @@ function Book() {
             <div className="page cover back-cover"></div>
           </HTMLFlipBook>
           </div> ) : (
-              <>
+              <div className="video-container">
               
               {
               !onEnded ? (<video ref={videoRef} autoPlay onEnded={handleVideoEnd} className="background-video" >
@@ -80,7 +80,7 @@ function Book() {
                 Tu navegador no soporta videos HTML5.
               </video>):
               <WishBox/>}
-              </>
+              </div>
             
         )}
       
@@ -140,6 +140,7 @@ const BookStyled = styled.div`
 
   .flip-book .back-cover {
     background: linear-gradient(45deg, #2196f3, #4caf50);
+    background-image: url("src/assets/images/back_cover_book.png");
     color: white;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -148,15 +149,17 @@ const BookStyled = styled.div`
 
 /* Video de fondo */
 .background-video {
+background-color: #391d62;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  margin: auto;
+  height: 50vh;
   object-fit: cover; /* Asegura que el video cubra toda la pantalla */
    /* Envía el video al fondo */
 }
-
+.video-container{
+background-color: #391d62;
+padding-top: 50%}
 `;
 
 export default Book;
