@@ -5,6 +5,7 @@ import Book from './components/Book';
 function App() {
   return <AppStyled>
   <div className='body'>
+    
   <Title title="¡FELIZ NAVIDAD!"/>
   <Book/>
   </div>

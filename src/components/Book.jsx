@@ -10,10 +10,6 @@ function Book() {
   const [onLastPage, setOnLastPage] = useState(false);
   const videoRef = useRef(null);
  
-
-
-
-
   function createPage(list) {
     let elements = [];
     for (let i = 0; i < list.length; i++) {
